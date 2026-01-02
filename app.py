@@ -399,6 +399,7 @@ def main() -> None:
     # Run optimization when button clicked
     if inputs["run_optimization"]:
         with st.spinner("Downloading data and running optimization..."):
+            st.caption("This may take up to 1–2 minutes.")
             try:
                 # Load data
                 loader = FinancialDataLoader(
